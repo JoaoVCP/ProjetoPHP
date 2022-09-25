@@ -11,8 +11,16 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="#">Projeto PW Noite</a>
+    <div id="logo"> <style>
+    #cabecalho {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      }
+    </style>
+      <img src="./download.png" width="70" height="70" alt="">
+    </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -22,11 +30,11 @@
           <a class="nav-link active" aria-current="page" href="./index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Produtos</a>
+          <a class="nav-link" href="#">Professores</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Usuários
+            Cadastro
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="./cadastro_usuario.php">Cadastrar</a></li>
@@ -34,6 +42,12 @@
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Bloquear</a></li>
           </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Salas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Disciplinas</a>
         </li>
       </ul>
     </div>
