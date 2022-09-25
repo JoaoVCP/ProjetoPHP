@@ -47,7 +47,7 @@
           <a class="nav-link" href="#">Salas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Disciplinas</a>
+          <a class="nav-link" href="./disciplinas.php">Disciplinas</a>
         </li>
       </ul>
     </div>
