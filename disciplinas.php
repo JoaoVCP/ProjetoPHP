@@ -36,16 +36,24 @@ include "./cabecalho.php";
                 <th scope="col"></th>
             </tr>
         </thead>
+        <?php
+
+        $materias = array('Administração', 'Contabilidade', 'Linguagem de Programação', 'Engenharia de software', 'Inglês I', 'Inglês II', 'Programação de Scripts', 'Programação Web', 'Matemática Discreta', 'Geometria');
+        $apelidos = array('ADM', 'CONT', 'LPROG', 'ENGSOFTW', 'ING I', 'ING II', 'PROGSCRIPT', 'PROGWEB', 'MATDISC', 'GEO');
+
+            for($id = 0; $id < 10; $id++) {
+        ?>        
         <tbody>
             <tr>
-                <th scope="row">1</th>
-                <td>Administração Geral</td>
+                <th scope="row"><?php echo $id ?></th>
+                <td><?php echo $materias[$id]?></td>
                 <td></td>
-                <td>ADM GERAL</td>
+                <td><?php echo $apelidos[$id]?></td>
                 <td><button type="button" class="btn btn-warning">Editar</button>&nbsp&nbsp&nbsp<button type="button" class="btn btn-danger">Excluir</button></td>
             </tr>
         </tbody>
-    </table>
+        <?php } ?>
+        </table>
 </div>
 
 <?php include "./rodape.php"; ?>
